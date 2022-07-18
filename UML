@@ -1,0 +1,13 @@
+sequenceDiagram
+    participant I as Product
+	participant A as Farmer
+	participant B as Distributor
+	participant C as Retailer
+	participant D as Consumer
+	A->>I: harvest Item
+	A->>I: process Item
+	A->>I: pack Item
+	B->>A: buy Item
+	B->>C: ship Item
+	C->>B: receive Item
+	D->>C: purchase Item
